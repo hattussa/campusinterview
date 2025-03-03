@@ -1,0 +1,392 @@
+[
+  {
+    "question": "What will be the output of the following code?\n#include <stdio.h>\nint main() {\n    int y = 1000;\n    int y = 34;\n    printf(\"Hello World! %d\\n\", y);\n    return 0;\n}",
+    "options": [
+      "Hello World! 1000",
+      "Hello World! 34",
+      "Compilation Error",
+      "Runtime Error"
+    ],
+    "answer": "Compilation Error",
+    "category": "Technical"
+  },
+  {
+    "question": "What will be the output of the following code?\n#include <stdio.h>\nvoid main() {\n    double x = 123828749.66;\n    int y = x;\n    printf(\"%d\\n\", y);\n    printf(\"%lf\\n\", y);\n}",
+    "options": [
+      "123828749\n123828749.000000",
+      "123828749.66\n123828749.66",
+      "123828749\n0.000000",
+      "Compilation Error"
+    ],
+    "answer": "123828749\n0.000000",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following is the most widely used external memory data structure?",
+    "options": ["B-Tree", "Red-Black Tree", "AVL Tree", "Both B and C"],
+    "answer": "B-Tree",
+    "category": "Technical"
+  },
+  {
+    "question": "What will be the output of the following Python code?\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1\n    if i == 3:\n        break\nelse:\n    print(0)",
+    "options": ["0\n1\n2", "0\n1\n2\n0", "0\n1\n2\n3", "0\n1\n2\n3\n0"],
+    "answer": "0\n1\n2",
+    "category": "Technical"
+  },
+  {
+    "question": "Which is/are the disadvantage(s) of C language?",
+    "options": ["No Garbage Collection", "Low Level of Abstraction", "Lack of Object Orientation", "All of these"],
+    "answer": "All of these",
+    "category": "Technical"
+  },
+  {
+    "question": "What will be the output of the following C code?\n#include <stdio.h>\n#include <string.h>\nint main()\n{\n    char name[] = \"Cppbuz\";\n    int len;\n    int size;\n    len = strlen(name);\n    size = sizeof(name);\n    printf(\"%d,%d\", len, size);\n    return 0;\n}",
+    "options": ["6,6", "6,7", "7,7", "7,6"],
+    "answer": "6,7",
+    "category": "Technical"
+  },
+  {
+    "question": "What are the elements present in the array of the following C code?\nint array[5] = {5};",
+    "options": ["5,5,5,5,5", "5,0,0,0,0", "5, (garbage), (garbage), (garbage), (garbage)", "(garbage), (garbage), (garbage), (garbage), 5"],
+    "answer": "5,0,0,0,0",
+    "category": "Technical"
+  },
+  {
+    "question": "A user defined data type, which is used to assign names to integral constants is called?",
+    "options": ["Union", "Array", "Structure", "Enum"],
+    "answer": "Enum",
+    "category": "Technical"
+  },
+  {
+    "question": "Conditional inclusion can be used for?",
+    "options": [
+      "Preventing multiple declarations of same function",
+      "Check for existence of a variable and doing something if it exists",
+      "Preventing multiple declarations of a variable",
+      "All of these"
+    ],
+    "answer": "All of these",
+    "category": "Technical"
+  },
+  {
+    "question": "What will be the output of the following C code?\n#include <stdio.h>\nint main()\n{\n    int i = 0, j = 0;\n    while (i < 5, j < 10)\n    {\n        i++;\n        j++;\n    }\n    printf(\"%d, %d\\n\", i, j);\n}",
+    "options": ["5, 10", "5, 5", "10, 10", "10, 5"],
+    "answer": "5, 10",
+    "category": "Technical"
+  },
+  {
+    "question": "What is the purpose of the serialize() method in jQuery?",
+    "options": [
+      "Converts a form's data into a JSON object", 
+      "Serializes a string into an array",
+      "Converts form data into a query string",
+      "Serializes an array into a string"
+    ],
+    "answer": "Converts form data into a query string",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of these Exception handlers cannot be type parameterized?",
+    "options": ["Catch", "Throw", "Throws", "All of these"],
+    "answer": "All of these",
+    "category": "Technical"
+  },
+  {
+    "question": "What does the CSS property filter: grayscale(100%); do?",
+    "options": [
+      "Adds a grayscale filter to the background",
+      "Converts the element to black and white",
+      "Sets the font color to gray",
+      "Adjusts the saturation of the element"
+    ],
+    "answer": "Converts the element to black and white",
+    "category": "Technical"
+  },
+  {
+    "question": "Consider you have a stack whose elements in it are as follows:\n5 4 3 2 << top\nWhere the top element is 2.\nYou need to get the following stack:\n6 5 4 3 2 << top\nThe operations that needed to be performed are (You can perform only push and pop).\nWhat is the correct sequence of operations?",
+    "options": [
+      "Push 6",
+      "Pop, Pop, Push 6, Push 5, Push 4",
+      "Pop, Push 6, Push 5",
+      "Push 6, Push 5, Push 4, Push 3"
+    ],
+    "answer": "Push 6",
+    "category": "Technical"
+  },
+  {
+    "question": "What is the order of namespaces in which Python looks for an identifier?",
+    "options": [
+      "Python first searches the built-in namespace, then the global namespace and finally the local namespace",
+      "Python first searches the built-in namespace, then the local namespace and finally the global namespace",
+      "Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+      "Python first searches the global namespace, then the local namespace and finally the built-in namespace"
+    ],
+    "answer": "Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following is not an arithmetic expression?",
+    "options": ["x = 10", "x /= 10", "x %= 10", "x != 10"],
+    "answer": "x != 10",
+    "category": "Technical"
+  },
+  {
+    "question": "If you want to exchange two rows in a two dimensional array, the fastest way is to:",
+    "options": [
+      "Silence the address of the rows in an array of pointer and exchange the pointer",
+      "Exchange the address of each element in the two row",
+      "Exchange the elements of the 2rows",
+      "None of these"
+    ],
+    "answer": "Silence the address of the rows in an array of pointer and exchange the pointer",
+    "category": "Technical"
+  },
+  {
+    "question": "What will be the output of the following code snippet?\n<script type=\"text/javascript\">\na = 5 + \"9\";\ndocument.write(a);\n</script>",
+    "options": ["14", "59", "Error", "undefined"],
+    "answer": "59",
+    "category": "Technical"
+  },
+  {
+    "question": "If an Java expression contains double, int, float, long, then the whole expression will be promoted into which of these data types?",
+    "options": ["long", "int", "double", "float"],
+    "answer": "double",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following is true for variable names in Python?",
+    "options": [
+      "Underscore and ampersand are the only two special characters allowed",
+      "All private members must have leading and trailing underscores",
+      "Unlimited length",
+      "None of these"
+    ],
+    "answer": "Unlimited length",
+    "category": "Technical"
+  },
+  {
+    "question": "What is the purpose of the CSS property z-index?",
+    "options": [
+      "Controls the transparency of an element",
+      "Specifies the stacking order of positioned elements",
+      "Sets the zoom level of an element",
+      "Defines the width of the element"
+    ],
+    "answer": "Specifies the stacking order of positioned elements",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following jQuery methods can be used to make an ajax call?",
+    "options": [
+      "ready(url, [data], [callback])",
+      "reload(url, [data], [callback])",
+      "load( url, [data], [callback])",
+      "None of these"
+    ],
+    "answer": "load( url, [data], [callback])",
+    "category": "Technical"
+  },
+  {
+    "question": "What language defines the behavior of a web page?",
+    "options": ["HTML", "CSS", "XML", "Java Script"],
+    "answer": "Java Script",
+    "category": "Technical"
+  },
+  {
+    "question": "Which built-in method returns the characters in a string beginning at the specified location?",
+    "options": ["substr()", "getSubstring()", "slice()", "None of these"],
+    "answer": "substr()",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following property allows a marquee to be used in the case of a text-overflow?",
+    "options": ["Overflow-Marquee", "Overflow-Style", "Overflow-Text", "None of these"],
+    "answer": "Overflow-Style",
+    "category": "Technical"
+  },
+  {
+    "question": "What are meta tags used for?",
+    "options": [
+      "To store information usually relevant to browsers and search engines",
+      "To only store information usually relevant to browsers",
+      "To only store information about search engines",
+      "To store information about external links"
+    ],
+    "answer": "To store information usually relevant to browsers and search engines",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following is the correct syntax to set the background color of all h1 elements to Green in jQuery?",
+    "options": [
+      "$(\"h1\").html(\"background-color\",\"Green\");",
+      "$(\"h1\").layout(\"background-color\",\"Green\");",
+      "$(\"h1\").style(\"background-color\",\"Green\");",
+      "$(\"h1\").css(\"background-color\",\"Green\");"
+    ],
+    "answer": "$(\"h1\").css(\"background-color\",\"Green\");",
+    "category": "Technical"
+  },
+  {
+    "question": "What is the range of numbers returned by Math.random() method?",
+    "options": ["-1.0 to 1.0", "-1 to 1", "0 to 100", "0.0 to 1.0"],
+    "answer": "0.0 to 1.0",
+    "category": "Technical"
+  },
+  {
+    "question": "What are <div> tags used for?",
+    "options": [
+      "To replace paragraphs. i.e. p tags",
+      "To logically divide the paragraphs",
+      "To logically divide the document",
+      "To provide space between tables"
+    ],
+    "answer": "To logically divide the document",
+    "category": "Technical"
+  },
+  {
+    "question": "Which of the following is the correct content-type header that a server side script should send for SSE in HTML5?",
+    "options": [
+      "Content-Type: text/application-stream",
+      "Content-Type: text/event-stream",
+      "Content-Type: text/data-stream",
+      "None of these"
+    ],
+    "answer": "Content-Type: text/event-stream",
+    "category": "Technical"
+  },
+  {
+    "question": "If 20% of a number is 12, what is the number?",
+    "options": ["50", "60", "70", "80"],
+    "answer": "60",
+    "category": "Aptitude"
+  },
+  {
+    "question": "A train travels 300 km in 5 hours. What is its speed?",
+    "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+    "answer": "60 km/h",
+    "category": "Aptitude"
+  },
+  {
+    "question": "What is 25% of 200?",
+    "options": ["25", "50", "75", "100"],
+    "answer": "50",
+    "category": "Aptitude"
+  },
+  {
+    "question": "If the cost price of an item is $50 and the selling price is $65, what is the profit percentage?",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": "30%",
+    "category": "Aptitude"
+  },
+  {
+    "question": "What is the next number in the sequence: 2, 4, 8, 16, ___?",
+    "options": ["24", "32", "64", "128"],
+    "answer": "32",
+    "category": "Aptitude"
+  },
+  {
+    "question": "If a man earns $500 in 10 days, how much will he earn in 25 days?",
+    "options": ["$1000", "$1250", "$1500", "$1750"],
+    "answer": "$1250",
+    "category": "Aptitude"
+  },
+  {
+    "question": "What is the average of the numbers 10, 20, 30, 40, and 50?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30",
+    "category": "Aptitude"
+  },
+  {
+    "question": "If 3 workers can complete a task in 10 days, how many workers are needed to complete the same task in 5 days?",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "category": "Aptitude"
+  },
+  {
+    "question": "What is the square root of 144?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "12",
+    "category": "Aptitude"
+  },
+  {
+    "question": "If a car travels 240 km in 4 hours, what is its speed in m/s?",
+    "options": ["10 m/s", "15 m/s", "20 m/s", "25 m/s"],
+    "answer": "20 m/s",
+    "category": "Aptitude"
+  },
+  {
+    "question": "If all cats are mammals and all mammals are animals, then which of the following is true?",
+    "options": [
+      "All cats are animals",
+      "All animals are cats",
+      "Some cats are not animals",
+      "None of these"
+    ],
+    "answer": "All cats are animals",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "Which number comes next in the series: 1, 1, 2, 3, 5, 8, ___?",
+    "options": ["10", "11", "12", "13"],
+    "answer": "13",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "If RED is coded as 27, how is GREEN coded?",
+    "options": ["42", "45", "48", "50"],
+    "answer": "45",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "If all roses are flowers and some flowers fade quickly, which of the following is true?",
+    "options": [
+      "All roses fade quickly",
+      "Some roses fade quickly",
+      "No roses fade quickly",
+      "None of these"
+    ],
+    "answer": "Some roses fade quickly",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "Which of the following is the odd one out?",
+    "options": ["Square", "Circle", "Triangle", "Rectangle"],
+    "answer": "Circle",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "If 5 machines can produce 100 units in 10 hours, how many units can 10 machines produce in 5 hours?",
+    "options": ["50", "100", "150", "200"],
+    "answer": "100",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "What is the missing number in the sequence: 3, 6, 12, 24, ___?",
+    "options": ["36", "48", "60", "72"],
+    "answer": "48",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "If all pens are pencils and some pencils are erasers, which of the following is true?",
+    "options": [
+      "All pens are erasers",
+      "Some pens are erasers",
+      "No pens are erasers",
+      "None of these"
+    ],
+    "answer": "Some pens are erasers",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "Which of the following is the correct analogy? Book : Pages :: Tree : ___",
+    "options": ["Leaves", "Branches", "Roots", "Fruits"],
+    "answer": "Leaves",
+    "category": "Logical & Reasoning"
+  },
+  {
+    "question": "If 2, 4, 8, 16, ___ is a sequence, what is the next number?",
+    "options": ["24", "32", "64", "128"],
+    "answer": "32",
+    "category": "Logical & Reasoning"
+  }
+]
