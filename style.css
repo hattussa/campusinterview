@@ -1,0 +1,455 @@
+:root {
+  --primaryColor: #e91e63;
+  --hoverColor: #c2185b;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Use Poppins as the primary font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(images/backgroundImage.png); /* Add your background image */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Fix the background image in place */
+}
+
+html, body {
+  min-height: 100%; /* Ensure full height coverage */
+}
+
+.screen {
+  background: rgba(255, 255, 255, 1);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Logo Styles */
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block; /* Ensure the logo behaves as a block element */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+/* Timer Styles */
+#timer {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(233, 30, 30, 0.15);
+  border-radius: 5px;
+  color: #e91e1e;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it's on top */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px 20px 20px 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  text-align: left;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.modal-content button {
+  padding: 15px 20px;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: var(--hoverColor);
+}
+
+/* Quiz Screen Styles */
+#quiz-screen {
+  width: 850px; /* Adjust the width as needed */
+  max-width: 80%; /* Ensure it doesn't overflow on smaller screens */
+  margin: auto; /* Center the quiz screen horizontally */
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Login Screen Styles */
+#login-screen h1 {
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+#login-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#login-form select {
+  padding: 10px;
+  margin-bottom: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#login-form button {
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+  background-color: var(--hoverColor);
+}
+
+#login-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Question Info Styles */
+#question-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#question-number,
+#questions-remaining {
+  padding: 5px 10px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+/* Quiz Screen Question Options Styles */
+#quiz-screen h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#options {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#options label {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#options label:hover {
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+#options input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+#previous-btn,
+#next-btn {
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  flex: 1; /* Equal width for both buttons */
+}
+
+#previous-btn:hover,
+#next-btn:hover {
+  background-color: var(--hoverColor);
+}
+
+#previous-btn:disabled,
+#next-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Selected Option Style */
+.selected-option {
+  background-color: #4B7902;
+  color: #ffffff;
+}
+
+/* Review Screen Style */
+#review-screen {
+  background: rgba(255, 255, 255, 1);
+  padding: 40px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center;
+}
+
+#review-screen h2 {
+  margin-bottom: 40px;
+}
+
+#review-questions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Responsive grid */
+  gap: 10px; /* Reduce gap for smaller screens */
+  margin-bottom: 40px;
+  width: 100%; /* Ensure the grid takes full width */
+  max-width: 800px; /* Limit maximum width */
+}
+
+.question-number-button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-number-button.answered {
+  background-color: #4B7902;
+  color: white;
+}
+
+.question-number-button.unanswered {
+  background-color: grey;
+  color: white;
+}
+
+#submit-review-button {
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-review-button:hover {
+  background-color: var(--hoverColor);
+}
+
+/* Review Button Container */
+.review-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/* Thank You Screen Styles */
+#thank-you-screen {
+  text-align: center;
+  width: 500px;
+}
+
+#thank-you-screen h2 {
+  color: var(--primaryColor);
+  margin-bottom: 20px;
+}
+
+#thank-you-screen p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#ok-button {
+  background-color: var(--primaryColor);
+  color: white;
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#ok-button:hover {
+  background-color: var(--hoverColor);
+}
+
+/* General styles for the footer */
+footer {
+  position: fixed; /* Fix the footer at the bottom of the screen */
+  bottom: 0; /* Position it at the bottom */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it full width */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add some padding */
+  font-size: 14px; /* Set the font size */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Optional: Add a border or shadow for better visibility */
+footer {
+  border-top: 1px solid #333; /* Add a subtle border */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+  .screen {
+    max-width: 70%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  #quiz-alert-modal {
+    width: 100%; /* Make it wider on smaller screens */
+    padding: 30px; /* Reduce padding for smaller screens */
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .modal-content {
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  #quiz-screen {
+    width: 70%; /* Make it wider on smaller screens */
+    padding: 30px; /* Reduce padding for smaller screens */
+    margin: auto;
+  }
+
+  #review-screen {
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+  }
+
+  #login-form input,
+  #login-form select,
+  #login-form button {
+    font-size: 14px;
+  }
+
+  #login-screen h1 {
+    font-size: 28px;
+  }
+
+  #question {
+    font-size: 16px;
+  }
+
+  #previous-btn,
+  #next-btn {
+    font-size: 14px;
+    padding: 16px 16px;
+  }
+
+  footer {
+    font-size: 12px; /* Smaller font size for mobile */
+    padding: 8px 0; /* Reduce padding for mobile */
+  }
+}
+
+@media (min-width: 350px) {
+  #login-screen h1 {
+    font-size: 24px;
+  }
+}

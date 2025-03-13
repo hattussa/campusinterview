@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hattussa Campus Interview</title>
+  <link rel="icon" href="images/Hattussa_favIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login-screen" class="screen">
+    <img id="logo" src="images/Hattussa.png" alt="Hattussa Logo" class="logo">
+    <h1>Preliminary Interview - <span id="current-year"></span></h1>
+    <form id="login-form">
+      <!-- Full Name Input -->
+      <label for="full-name">Full Name:</label>
+      <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        required
+        pattern="[A-Za-z0-9 ]+"
+        oninput="this.value = this.value.toUpperCase(); this.value = this.value.replace(/[^A-Za-z0-9 ]/g, '');"
+        style="text-transform: uppercase;"
+        placeholder="Enter Full Name"
+      >
+  
+      <!-- Roll Number Input -->
+      <label for="roll-number">Roll Number:</label>
+      <input
+        type="text"
+        id="roll-number"
+        name="roll-number"
+        required
+        pattern="[A-Za-z0-9]+"
+        oninput="this.value = this.value.toUpperCase(); this.value = this.value.replace(/[^A-Za-z0-9]/g, '');"
+        style="text-transform: uppercase;"
+        placeholder="Enter Roll Number"
+      >
+  
+      <!-- Department Dropdown -->
+      <label for="department">Department:</label>
+      <select id="department"
+              name="department"
+              required
+              pattern="[A-Za-z0-9 ]+"
+              oninput="this.value = this.value.toUpperCase(); this.value = this.value.replace(/[^A-Za-z0-9 ]/g, '');"
+              style="text-transform: uppercase;"
+              placeholder="Select Department"
+              >
+        <!-- Options will be populated dynamically -->
+      </select>
+  
+      <!-- Submit Button -->
+      <button type="submit">Start Quiz</button>
+    </form>
+  </div>
+
+<!-- Modal for the alert message -->
+<div id="quiz-alert-modal" class="modal">
+  <div class="modal-content">
+    <h2>Important Rules</h2>
+    <p>
+      Please read the following rules carefully
+    </p>
+    <ul>
+      <li>Screenshots are not allowed during the quiz.</li>
+      <br>
+      <li>Any attempt to take a screenshot will be noted in the backend and will result in disqualification.</li>
+      <br>
+      <li>Do not switch tabs or minimize the window.</li>
+      <br>
+      <li>Do not lock the mobile screen.</li>
+      <br>
+      <li>Any violation of the rules stated above will result in the quiz starting over.</li>
+    </ul>
+    <button id="start-quiz-button">I Understand, Start Quiz</button>
+  </div>
+</div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="screen hidden">
+    <!-- <img src="images/Hattussa.png" alt="Hattussa Logo" class="logo"> -->
+    <div id="timer">Time Left: <span id="time-left">00:00:00</span></div>
+    <div id="question-info">
+        <!-- <span id="question-number"></span> -->
+        <span id="questions-remaining"></span>
+    </div>
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <div class="button-container">
+    <button id="previous-btn" disabled>Previous</button>
+    <button id="next-btn" disabled>Next</button>
+    </div>
+  </div>
+
+  <!-- Review Screen -->
+  <div id="review-screen" class="hidden">
+    <h2>Review Your Answers</h2>
+    <div id="review-questions-container"></div>
+    <div class="review-button-container">
+    <button id="submit-review-button">Submit</button>
+    </div>
+  </div>
+
+  <!-- Thank You Screen -->
+  <div id="thank-you-screen" class="screen hidden">
+    <h2>Thank You!</h2>
+    <p>Quiz is completed. Click ok to submit the result.</p>
+    <button id="ok-button">OK</button>
+  </div>
+
+  <!-- Copyright Message -->
+  <!-- <footer>
+    <p>&copy; <span id="current-year"></span> Hattussa IT Solutions</a>. All rights reserved.</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
